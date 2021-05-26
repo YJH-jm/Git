@@ -1,5 +1,3 @@
-# hello-world
-Hello World repository for Git tutorial
-This is an example repository for the Git tutoial on https://www.w3schools.com
+# GitHub
 
-This repository is built step by step in the tutorial.
+ithub setting 및 오류 관련 파일 업로드
