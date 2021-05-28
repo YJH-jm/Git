@@ -1,0 +1,13 @@
+1. warning: LF will be replaced by CRLF in DeliveryService.ipynb.
+   The file will have its original line endings in your working directory
+
+    * 원인 :
+        - 맥 또는 리눅스를 쓰는 개발자와 윈도우 쓰는 개발자가 Git으로 협업할 때 발생하는 Whitespace 에러
+        - 유닉스 시스템에서는 한 줄의 끝이 LF(Line Feed)로 이뤄짐
+        - 윈도우에서는 줄 하나가 CR(Carriage Return)와 LF(Line Feed), 즉 CRLF로 이뤄짐
+
+    * 해결책 :
+        - git config --global core.autocrlf true (전체 시스템에 해당)
+        - git config core.autocrlf true (해당 프로젝트만)
+
+Updates were rejected because the remote contains work that you do not have locally.
