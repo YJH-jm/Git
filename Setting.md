@@ -8,8 +8,8 @@
     * git --version
 
 3. 사용자 관련 정보 설정
-    * git --global user.name "YJH-jm"
-    * git --global user.email "jmjhjob13@gmail.com"
+    * git config --global user.name "YJH-jm"
+    * git config --global user.email "jmjhjob13@gmail.com"
     * git config user.name (확인)
 
 4. 터미널에서 환경설정 확인
@@ -43,9 +43,6 @@
 
 
 7. github에 파일 올리기 및 폴더 연결
-    * git add README.md
-    * git commit -m 'README.md file 생성'
-        - 'README.md file 생성' 라는 메세지와 함께 README.md 파일 commit
 
     *  git remote add origin https://github.com/YJH-jm/hello-world.git
         - 해당 PC에 설정한 폴더(로컬 저장소, git init로 설정한 폴더)와 github의 저장소를 연결한다
@@ -55,12 +52,16 @@
         - 등록된 저장소 이름과 URL 표시해줌
         - 결과값
         origin  https://github.com/YJH-jm/hello-world.git (fetch)
-        origin  https://github.com/YJH-jm/hello-world.git (push) 
+        origin  https://github.com/YJH-jm/hello-world.git (push)
+        
+    * git remote remove origin
+        - 폴더(여기서는 myproject)와 github repos 연결 끊기
+    
+    * git add README.md
+    * git commit -m 'README.md file 생성'
+        - 'README.md file 생성' 라는 메세지와 함께 README.md 파일 commit 
     
     *cf>
-
-    * git remote remove origin
-        - 폴더(여기서는 myproject)와 github repos 연결 끊기 (검색 후 추가)
 
     * git push -u origin master
         - 최종 업로드!
