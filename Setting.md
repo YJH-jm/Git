@@ -1,29 +1,35 @@
 
 1. 현재 폴더의 파일 확인
-    * ls (리눅스 기반 명령어, 윈도우 command  창에서는 쓸 수 없었으니 powershell에서는 가능)
-    * ls -a
+   - ``` ls``` (리눅스 기반 명령어, 윈도우 command  창에서는 쓸 수 없었으니 powershell에서는 가능)
+   - ``` ls -a```
         - 더 자세하게 보고싶은 경우 
 
 2. 버전 확인
-    * git --version
+   - ```git --version```
 
 3. 사용자 관련 정보 설정
-    * git config --global user.name "YJH-jm"
-    * git config --global user.email "jmjhjob13@gmail.com"
-    * git config user.name (확인)
+   - ```git config --global user.name "user_name"```
+   
+   <!--    - ```git config --global user.name "YJH-jm"``` -->
+   
+   - ``` git config --global user.email "email@gmail.com"```
+
+   <!--    - ``` git config --global user.email "jmjhjob13@gmail.com"``` -->
+   - ``` git config user.name (확인)```
+   - 만약 등록된 정보를 바꾸는 경우 Window에서는 '제어판' >> '사용자 계정' >> '자격 증명 관리' 에 들어가서 기존의 정보 삭제
 
 4. 터미널에서 환경설정 확인
-    * git config --list
+   - ```git config --list```
         - git을 설치하면 git에 관련된 모든 환경설정이 .gitconfig 라는 파일에 저장
 
 5. 지금까지 입력한 모든 명령어 확인
-    * history
+    - ```history```
 
 6. 새로운 디렉토리 만들고 이 폴더를 깃허브에 연결하기 위해 설정 
-    * mkdir myproject 
-    * cd myproject
-    * git init
-        -> master로 변환이 됨
+    - ```mkdir myproject ```
+    - ```cd myproject```
+    - ```git init```
+      -  master로 변환이 됨
 
     cf)
     * open .git
