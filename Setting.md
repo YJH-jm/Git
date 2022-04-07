@@ -77,3 +77,7 @@
 
 9. exit
     * 나가기 
+
+10. 특정 branch clone
+   - ```git clone -b {branch_name} --single-branch {저장소 URL}```
+
