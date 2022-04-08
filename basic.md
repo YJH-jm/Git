@@ -68,6 +68,17 @@
 - 특정 branch clone
    - ```git clone -b {branch_name} --single-branch {저장소 URL}```
 
+- 하위 폴더 clone
+   -  ```git remote add origin {저장소주소}```
+      - 저장소 연결
+   - ```git config core.sparsecheckout true```
+      - git sparse checkout 활성화
+   - ```git {폴더경로}/* >> .git/info/sparse-checkout```
+      - clone 하기 위한 폴더 경로를 설정
+      - 폴더 경로에 "" 작성하면 실행 안됨
+      - A라는 저장소에서 a_test 폴더의 a_test_test 폴더를 다운받고 싶으면 **a_test/a_test_test/src/*** 이렇게 작성
+   - ```git pull origin master```         
+
 ## branch
 - branch 생성
    - ```git checkout -b {branchname}```
