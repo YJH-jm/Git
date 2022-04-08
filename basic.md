@@ -64,6 +64,25 @@
 - github에서 파일 다운받기
     - ```git pull origin master```
 
-
+## Clone
 - 특정 branch clone
    - ```git clone -b {branch_name} --single-branch {저장소 URL}```
+
+## branch
+- branch 생성
+   - ```git checkout -b {branchname}```
+      - branch를 생성하고 이동  
+
+- branch 조회
+   - ```git branch```
+      - local에 존재하는 local branch 조회
+   - ```git branch -r```
+      - local에 저장된 remote branch 조회 
+    - ```git branch -a```
+      - 모든 branch 정보 조회    
+
+- branch 삭제
+   - ```git push origin --delete {branchname}```
+      - remote branch 삭제 방법
+   - ```git branch -D {branchname}```
+      - local branch 삭제 방법
