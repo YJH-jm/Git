@@ -80,9 +80,31 @@
    - ```git pull origin master```         
 
 ## branch
+- branch 확인
+   - ```git branch```
+      - 현재 내가 위치한 branch 확인
+        
 - branch 생성
-   - ```git checkout -b {branchname}```
-      - branch를 생성하고 이동  
+   - ```git branch```
+    
+   - ~~```git checkout -b {branchname}```~~
+   - ```git switch -c {branchname}
+      - branch를 생성하고 이동 
+      - git 2.23 버전부터 git checkout을 대신하여 switch와 restore 나옴
+      
+   - ```git push origin {branchname}```
+      - local branch와 같은 이름으로 remote branch가 생성되고 local branch의 내용이 push 됨
+
+   - ```git switch -t origin/{origin branchname}```
+      - remote branch와 같은 이름으로 로컬 브랜치를 생성하고 switch
+       
+- branch 연동
+   - ```git branch --set-upstream-to origin/{branchname}``` 
+             
+- branch 이동
+   - ~~```git checkout {branchname}```~~
+   - ```git switch {branchname}```
+      - git 2.23 버전부터 git checkout을 대신하여 switch와 restore 나옴
 
 - branch 조회
    - ```git branch```
