@@ -123,4 +123,4 @@
       - local branch 삭제 방법
 
 - remote branch 생성 후 local brabch push 
-   - ```git push origin {local branchname}:{remote branchname}
+   - ```git push origin {local branchname}:{remote branchname}```
