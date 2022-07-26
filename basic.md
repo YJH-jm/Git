@@ -100,6 +100,8 @@
        
 - branch 연동
    - ```git branch --set-upstream-to origin/{branchname}``` 
+
+- remote branch 만들고 local branch push
              
 - branch 이동
    - ~~```git checkout {branchname}```~~
@@ -119,3 +121,6 @@
       - remote branch 삭제 방법
    - ```git branch -D {branchname}```
       - local branch 삭제 방법
+
+- remote branch 생성 후 local brabch push 
+   - ```git push origin {local branchname}:{remote branchname}
